@@ -1,0 +1,20 @@
+[
+    {
+        "app_domain": "smart-patrol-v3.int",
+        "app_id": "001",
+        "color1": "#B63031",
+        "color2": "#000",
+        "logo": "",
+        "icon": "",
+         "company_logo": "http://103.77.78.169/smart-patrol-web-v3/assets/apps/assets/plugins/login/images/LogoRGN.png",
+        "company_name": "Licensed to PT. Rajawali Garda Nusantara"
+    },
+    {
+        "app_domain": "smart-patrol-srb-v3.int",
+        "app_id": "002",
+        "color1": "#474962",
+        "color2": "#000",
+        "logo": "029c5b28bbc8a5ea93a131494ef7b9d2.png",
+        "icon": "029c5b28bbc8a5ea93a131494ef7b9d2.png"
+    }
+]
