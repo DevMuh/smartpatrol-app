@@ -1,0 +1,391 @@
+--
+-- PostgreSQL database dump
+--
+
+-- Dumped from database version 10.5
+-- Dumped by pg_dump version 11.5
+
+-- Started on 2019-11-06 14:05:02 WIB
+
+SET statement_timeout = 0;
+SET lock_timeout = 0;
+SET idle_in_transaction_session_timeout = 0;
+SET client_encoding = 'UTF8';
+SET standard_conforming_strings = on;
+SELECT pg_catalog.set_config('search_path', '', false);
+SET check_function_bodies = false;
+SET xmloption = content;
+SET client_min_messages = warning;
+SET row_security = off;
+
+SET default_tablespace = '';
+
+SET default_with_oids = false;
+
+--
+-- TOC entry 201 (class 1259 OID 219171)
+-- Name: additional; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.additional (
+    white_title character varying(225),
+    red_title character varying(255),
+    desc_title character varying(225),
+    icon_1 character varying(255),
+    label_1 character varying(255),
+    label_desc_1 character varying(255),
+    icon_2 character varying(255),
+    label_2 character varying(255),
+    label_desc_2 character varying(255),
+    icon_3 character varying(255),
+    label_3 character varying(255),
+    label_desc_3 character varying(255),
+    icon_4 character varying(255),
+    label_4 character varying(255),
+    label_desc_4 character varying(255),
+    image character varying(255)
+);
+
+
+ALTER TABLE public.additional OWNER TO postgres;
+
+--
+-- TOC entry 196 (class 1259 OID 216869)
+-- Name: conten; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.conten (
+    id_ bigint NOT NULL,
+    conten_name character varying(255),
+    menu_name character varying(255),
+    conten_status character varying(255),
+    is_menu character varying(255) DEFAULT 0,
+    tabel character varying(255)
+);
+
+
+ALTER TABLE public.conten OWNER TO postgres;
+
+--
+-- TOC entry 203 (class 1259 OID 219185)
+-- Name: counting; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.counting (
+    icon_1 character varying(255),
+    caption_1 character varying(255),
+    score_1 integer,
+    icon_2 character varying(255),
+    caption_2 character varying(255),
+    score_2 integer,
+    icon_3 character varying(255),
+    caption_3 character varying(255),
+    score_3 integer,
+    icon_4 character varying(255),
+    caption_4 character varying(255),
+    score_4 integer
+);
+
+
+ALTER TABLE public.counting OWNER TO postgres;
+
+--
+-- TOC entry 204 (class 1259 OID 219193)
+-- Name: demo_video; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.demo_video (
+    white_title character varying(255),
+    red_title character varying(255),
+    desc_title character varying(255),
+    image character varying(255)
+);
+
+
+ALTER TABLE public.demo_video OWNER TO postgres;
+
+--
+-- TOC entry 199 (class 1259 OID 219123)
+-- Name: features; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.features (
+    white_title character varying(255),
+    red_title character varying(255),
+    description character varying(255),
+    image character varying(255),
+    label_title_1 character varying(255),
+    label_description_1 character varying(255),
+    icon_1 character varying(255),
+    label_title_2 character varying(255),
+    label_description_2 character varying(255),
+    icon_2 character varying(255),
+    label_title_3 character varying(255),
+    label_description_3 character varying(255),
+    icon_3 character varying(255),
+    label_title_4 character varying(255),
+    label_description_4 character varying(255),
+    icon_4 character varying(255),
+    label_title_5 character varying(255),
+    label_description_5 character varying(255),
+    icon_5 character varying(255),
+    label_title_6 character varying(255),
+    label_description_6 character varying(255),
+    icon_6 character varying(255)
+);
+
+
+ALTER TABLE public.features OWNER TO postgres;
+
+--
+-- TOC entry 197 (class 1259 OID 216896)
+-- Name: home; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.home (
+    title_wihite character varying(225),
+    "Title_red" character varying(255),
+    midle_title character varying(225),
+    "desc" character varying(255),
+    img_1 character varying(255),
+    img_2 character varying(255),
+    img_3 character varying(255),
+    title_wihite_2 character varying(255)
+);
+
+
+ALTER TABLE public.home OWNER TO postgres;
+
+--
+-- TOC entry 200 (class 1259 OID 219143)
+-- Name: how_it_works; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.how_it_works (
+    black_title character varying(255),
+    red_title character varying(255),
+    title_description character varying(255),
+    image_1 character varying(255),
+    "desc" text,
+    subtitle character varying(255),
+    icon_1 character varying(255),
+    item_description_1 character varying(255),
+    icon_2 character varying(255),
+    item_description_2 character varying(255),
+    icon_3 character varying(255),
+    item_description_3 character varying(255),
+    icon_4 character varying(255),
+    item_description_4 character varying(255),
+    image_2 character varying(255)
+);
+
+
+ALTER TABLE public.how_it_works OWNER TO postgres;
+
+--
+-- TOC entry 202 (class 1259 OID 219178)
+-- Name: screenshots; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.screenshots (
+    white_title character varying(255),
+    red_title character varying(255),
+    desc_title character varying(255),
+    image_1 character varying(255),
+    image_2 character varying(255),
+    image_3 character varying(255),
+    image_4 character varying(255),
+    image_5 character varying(255),
+    image_6 character varying(255),
+    image_7 character varying(255)
+);
+
+
+ALTER TABLE public.screenshots OWNER TO postgres;
+
+--
+-- TOC entry 205 (class 1259 OID 219206)
+-- Name: testimonials; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.testimonials (
+    testimoni_1 text,
+    name_1 character varying(255),
+    image_1 character varying(255),
+    testimoni_2 text,
+    name_2 character varying(255),
+    image_2 character varying(255),
+    testimoni_3 text,
+    name_3 character varying(255),
+    image_3 character varying(255)
+);
+
+
+ALTER TABLE public.testimonials OWNER TO postgres;
+
+--
+-- TOC entry 198 (class 1259 OID 216904)
+-- Name: welcome; Type: TABLE; Schema: public; Owner: postgres
+--
+
+CREATE TABLE public.welcome (
+    black_title character varying(225),
+    red_title character varying(255),
+    description character varying(225),
+    "desc" character varying(255),
+    image character varying(255),
+    label_title_1 character varying(255),
+    label_description_1 character varying(255),
+    icon_1 character varying(255),
+    label_title_2 character varying(255),
+    label_description_2 character varying(255),
+    icon_2 character varying(255),
+    label_title_3 character varying(255),
+    label_description_3 character varying(255),
+    icon_3 character varying(255)
+);
+
+
+ALTER TABLE public.welcome OWNER TO postgres;
+
+--
+-- TOC entry 2843 (class 0 OID 219171)
+-- Dependencies: 201
+-- Data for Name: additional; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.additional (white_title, red_title, desc_title, icon_1, label_1, label_desc_1, icon_2, label_2, label_desc_2, icon_3, label_3, label_desc_3, icon_4, label_4, label_desc_4, image) FROM stdin;
+ADDITIONAL	FEATURES	We ensure quality & support. People love us & we love them. Here goes some simple dummy text.	code	BOOTSTRAP 3.2	Lorem ipsum dolor sit amet, consectetur adipiscing elit est is.	html5	HTML5 & CSS3	Lorem ipsum dolor sit amet, consectetur adipiscing elit est is.	desktop	REPONSIVE	Lorem ipsum dolor sit amet, consectetur adipiscing elit est is.	rocket	UNLIMITED SUPPORT	Lorem ipsum dolor sit amet, consectetur adipiscing elit est is.	20191106092001.png
+\.
+
+
+--
+-- TOC entry 2838 (class 0 OID 216869)
+-- Dependencies: 196
+-- Data for Name: conten; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.conten (id_, conten_name, menu_name, conten_status, is_menu, tabel) FROM stdin;
+3	features	features	1	1	features
+4	how-it-works	how it works	1	1	how_it_works
+5	additional	additional	1	1	additional
+7	screenshots	screenshots	1	1	screenshots
+8	counting	counting	1	0	counting
+6	price-table	price-table	1	1	home
+9	demo-video	demo-video	1	1	demo_video
+10	testimonials	testimonials	1	0	testimonials
+14	subscribe	subscribe	0	0	home
+13	twitter-feed	twitter-feed	0	0	home
+1	home	home	1	1	home
+11	team	team	1	0	home
+12	news	news	1	0	home
+15	contact	contact	1	1	home
+16	download-now	download-now	1	0	home
+17	copyright	copyright	1	0	home
+2	welcome	welcome	1	1	welcome
+\.
+
+
+--
+-- TOC entry 2845 (class 0 OID 219185)
+-- Dependencies: 203
+-- Data for Name: counting; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.counting (icon_1, caption_1, score_1, icon_2, caption_2, score_2, icon_3, caption_3, score_3, icon_4, caption_4, score_4) FROM stdin;
+cloud-download	Downloads	1505	thumbs-o-up	Likes	5200	shield	Awards Won	400	user	Author Working	34
+\.
+
+
+--
+-- TOC entry 2846 (class 0 OID 219193)
+-- Dependencies: 204
+-- Data for Name: demo_video; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.demo_video (white_title, red_title, desc_title, image) FROM stdin;
+DEMO	VIDEO	We ensure quality & support. People love us & we love them. Here goes some simple dummy text.	20191106095705.png
+\.
+
+
+--
+-- TOC entry 2841 (class 0 OID 219123)
+-- Dependencies: 199
+-- Data for Name: features; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.features (white_title, red_title, description, image, label_title_1, label_description_1, icon_1, label_title_2, label_description_2, icon_2, label_title_3, label_description_3, icon_3, label_title_4, label_description_4, icon_4, label_title_5, label_description_5, icon_5, label_title_6, label_description_6, icon_6) FROM stdin;
+AWESOME	FEATURES	We ensure quality & support. People love us & we love them. Lorem ipsum dolor sit amet, consectetur adipiscing elit.	20191106085807.png	CREATIVE DESIGN	Lorem ipsum dolor sit amet, consectetur adipiscing elit est is.	desktop	Easy to Customize	Lorem ipsum dolor sit amet, consectetur adipiscing elit est is.	lightbulb-o	Bootstrap 3	Lorem ipsum dolor sit amet, consectetur adipiscing elit est is.	code	Different Colors	Lorem ipsum dolor sit amet, consectetur adipiscing elit est is.	pagelines	SEO Friendly	Lorem ipsum dolor sit amet, consectetur adipiscing elit est is.	globe	24/7 Support	Lorem ipsum dolor sit amet, consectetur adipiscing elit est is.	microphone
+\.
+
+
+--
+-- TOC entry 2839 (class 0 OID 216896)
+-- Dependencies: 197
+-- Data for Name: home; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.home (title_wihite, "Title_red", midle_title, "desc", img_1, img_2, img_3, title_wihite_2) FROM stdin;
+BEST WAY TO DO IT	PRESENT	Just Try It.	We ensure quality & support. People love us & we love them. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit.	20191106085221.png	20191106085224.png	20191106085228.png	your
+\.
+
+
+--
+-- TOC entry 2842 (class 0 OID 219143)
+-- Dependencies: 200
+-- Data for Name: how_it_works; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.how_it_works (black_title, red_title, title_description, image_1, "desc", subtitle, icon_1, item_description_1, icon_2, item_description_2, icon_3, item_description_3, icon_4, item_description_4, image_2) FROM stdin;
+HOW IT TEST	WORKS	We ensure quality & support. People love us & we love them. Here goes some simple dummy text.	20191106091241.png	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.	BENEFITS OF APP	bell	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.	star	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.	comment	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.	heart	Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.	20191106091244.png
+\.
+
+
+--
+-- TOC entry 2844 (class 0 OID 219178)
+-- Dependencies: 202
+-- Data for Name: screenshots; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.screenshots (white_title, red_title, desc_title, image_1, image_2, image_3, image_4, image_5, image_6, image_7) FROM stdin;
+APP	SCREENSHOTS	We ensure quality & support. People love us & we love them. Here goes some simple dummy text.	20191106104320.jpg	20191106104957.jpg	3.jpg	4.jpg	5.jpg	6.jpg	7.jpg
+\.
+
+
+--
+-- TOC entry 2847 (class 0 OID 219206)
+-- Dependencies: 205
+-- Data for Name: testimonials; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.testimonials (testimoni_1, name_1, image_1, testimoni_2, name_2, image_2, testimoni_3, name_3, image_3) FROM stdin;
+Lorem ipsum dolor sit amet, consectetur , sed do eiusmod tempor incididunt ut labore et dolore aliqua.Lorem ipsum dolor sit amet,  adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.	Masum Rana	20191106110632.png	Lorem ipsum dolor sit amet, consectetur , sed do eiusmod tempor incididunt ut labore et dolore aliqua.Lorem ipsum dolor sit amet,  adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.	Masum Rana	2.png	Lorem ipsum dolor sit amet, consectetur , sed do eiusmod tempor incididunt ut labore et dolore aliqua.Lorem ipsum dolor sit amet,  adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore aliqua.	Masum Rana	3.png
+\.
+
+
+--
+-- TOC entry 2840 (class 0 OID 216904)
+-- Dependencies: 198
+-- Data for Name: welcome; Type: TABLE DATA; Schema: public; Owner: postgres
+--
+
+COPY public.welcome (black_title, red_title, description, "desc", image, label_title_1, label_description_1, icon_1, label_title_2, label_description_2, icon_2, label_title_3, label_description_3, icon_3) FROM stdin;
+BEST WAY TO	LAYER nya	Just Try It Out ..	We ensure quality & support. People love us & we love them. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lorem ipsum dolor sit amet, consectetur adipiscing elit. entah	20191106085117.jpg	Lable Title 1	descrtription	desktop	Lable Title 2	description	cogs	Lable title 3	description	briefcase
+\.
+
+
+--
+-- TOC entry 2716 (class 2606 OID 216873)
+-- Name: conten conten_pkey; Type: CONSTRAINT; Schema: public; Owner: postgres
+--
+
+ALTER TABLE ONLY public.conten
+    ADD CONSTRAINT conten_pkey PRIMARY KEY (id_);
+
+
+-- Completed on 2019-11-06 14:08:09 WIB
+
+--
+-- PostgreSQL database dump complete
+--
+
